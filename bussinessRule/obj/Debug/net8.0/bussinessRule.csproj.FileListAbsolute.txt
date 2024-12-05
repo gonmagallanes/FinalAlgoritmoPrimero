@@ -1,0 +1,11 @@
+C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\bin\Debug\net8.0\bussinessRule.deps.json
+C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\bin\Debug\net8.0\bussinessRule.dll
+C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\bin\Debug\net8.0\bussinessRule.pdb
+C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\obj\Debug\net8.0\bussinessRule.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\obj\Debug\net8.0\bussinessRule.AssemblyInfoInputs.cache
+C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\obj\Debug\net8.0\bussinessRule.AssemblyInfo.cs
+C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\obj\Debug\net8.0\bussinessRule.csproj.CoreCompileInputs.cache
+C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\obj\Debug\net8.0\bussinessRule.dll
+C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\obj\Debug\net8.0\refint\bussinessRule.dll
+C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\obj\Debug\net8.0\bussinessRule.pdb
+C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\obj\Debug\net8.0\ref\bussinessRule.dll
