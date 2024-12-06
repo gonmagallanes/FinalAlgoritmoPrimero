@@ -17,5 +17,9 @@ namespace bussinessRule
         public string nombreCapital { get; set; }
         public int codigoDeArea { get; }
 
+        public override string ToString()
+        {
+            return $"~~~~~\n Nombre: {nombrePais}\n Capital: {nombreCapital}\n Codigo de Area: {codigoDeArea}\n~~~~~";
+        }
     }
 }

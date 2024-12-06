@@ -110,7 +110,7 @@ namespace bussinessRule
             {
                 if (pais.codigoDeArea == id)
                 {
-                    paisBuscado = pais.nombrePais;
+                    paisBuscado = pais.ToString();
 
                 }
             }

@@ -91,10 +91,11 @@ namespace bussinessRule
             {
                 if (alumno.DNI == dni)
                 {
-                    alumnoBuscado = alumno.Nombre;
+                    alumnoBuscado = alumno.ToString() + "Pais de nacimiento: " + nacionalidaAlumno(alumno.codigoDeArea) + "\n~~~~~";
+
                 }
             }
-            return $"El alumno buscado: {alumnoBuscado}";
+            return alumnoBuscado;
         }
 
         public string notaMasAlta()
@@ -149,14 +150,10 @@ namespace bussinessRule
 
         public string nacionalidaAlumno(int id)
         {
-
             Alumno alumno;
             string paisBuscado = _ListaPaises.pasarCodigoAPaises(id);
 
-
-
             return paisBuscado;
-
         }
 
 

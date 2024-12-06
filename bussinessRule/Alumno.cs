@@ -20,6 +20,11 @@ namespace bussinessRule
         public int DNI { get; }
         public double Nota { get; set; }
         public int codigoDeArea { get; set; }
-        public string nacionalidad { get; set; }
+
+
+        public override string ToString()
+        {
+            return $"~~~~~\n Nombre: {Nombre}\n DNI: {DNI}\n Nota: {Nota}\n ";
+        }
     }
 }
