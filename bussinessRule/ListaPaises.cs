@@ -80,6 +80,21 @@ namespace bussinessRule
 
         }
 
+        public string buscarPais(int id)
+        {
+            string paisBuscado = "";
+
+            foreach (Paises pais in _ListaPaises)
+            {
+                if (pais.codigoDeArea == id)
+                {
+                    paisBuscado = pais.nombrePais;
+
+                }
+            }
+            return paisBuscado;
+        }
+
         public string mostrarPaises()
         {
             string texto = "";
@@ -99,17 +114,33 @@ namespace bussinessRule
             return texto;
         }
 
-        public Paises buscarPaises(int codigoArea)
+        public string pasarCodigoAPaises(int id)
         {
-            foreach (Paises pais in _ListaPaises)
+
+            foreach (Paises idPais in _ListaPaises)
             {
-                if (pais.codigoDeArea == codigoArea)
+
+                if (idPais.codigoDeArea == id)
                 {
-                    return pais;
+                    return $"{idPais.nombrePais}";
                 }
+
             }
-            return null;
+            return "Desconocido";
+
         }
+
+        // public string buscarPaises(int codigoArea)
+        // {
+        //     foreach (Paises pais in _ListaPaises)
+        //     {
+        //         if (pais.codigoDeArea == codigoArea)
+        //         {
+        //             return $"{pais.nombrePais}";
+        //         }
+        //     }
+        //     return "";
+        // }
 
         public bool listaNoVaciaP()
         {

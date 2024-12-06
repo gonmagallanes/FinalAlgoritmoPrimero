@@ -8,8 +8,18 @@ namespace UserInterface
 {
     public class ControladorMenus
     {
-        MenuAlumno menuAlumnos = new MenuAlumno();
-        MenuPais menuPaises = new MenuPais();
+        MenuAlumno menuAlumnos;
+        MenuPais menuPaises;
+
+        public ControladorMenus()
+        {
+            ListaPaises listaPaises = new ListaPaises();
+            this.menuPaises = new MenuPais(listaPaises);
+
+            ListaAlumno listaAlumno = new ListaAlumno(listaPaises);
+            this.menuAlumnos = new MenuAlumno(listaAlumno);
+        }
+
         public void elegirMenus()
         {
             string eleccion = "";

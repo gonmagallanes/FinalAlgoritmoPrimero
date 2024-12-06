@@ -9,7 +9,13 @@ namespace UserInterface
 {
     public class MenuAlumno
     {
-        ListaAlumno alumnoListado = new ListaAlumno();
+        ListaAlumno alumnoListado;
+
+        public MenuAlumno(ListaAlumno alumnolistado)
+        {
+            this.alumnoListado = alumnolistado;
+
+        }
         public void MostrarMenuAlumnos()
         {
             string eleccionAlumno = "";
@@ -30,7 +36,7 @@ namespace UserInterface
 
                 switchAlumnos(eleccionAlumno);
 
-            } while (eleccionAlumno != "7");
+            } while (eleccionAlumno != "8");
         }
 
         private void switchAlumnos(string eleccion)

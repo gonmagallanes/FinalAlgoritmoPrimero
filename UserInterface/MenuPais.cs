@@ -9,7 +9,12 @@ namespace UserInterface
 {
     public class MenuPais
     {
-        ListaPaises paisListado = new ListaPaises();
+        ListaPaises paisListado;
+
+        public MenuPais(ListaPaises paisListado)
+        {
+            this.paisListado = paisListado;
+        }
 
         public void mostrarMenuPaises()
         {
@@ -21,7 +26,8 @@ namespace UserInterface
                 Console.WriteLine("2- Eliminar País");
                 Console.WriteLine("3- Modificar País");
                 Console.WriteLine("4- Mostrar Paises");
-                Console.WriteLine("5- Volver al inicio");
+                Console.WriteLine("5- Buscar Pais por Codigo de Area");
+                Console.WriteLine("6- Volver al inicio");
 
 
                 eleccionPais = Console.ReadLine();
@@ -29,7 +35,7 @@ namespace UserInterface
                 switchPaises(eleccionPais);
 
 
-            } while (eleccionPais != "5");
+            } while (eleccionPais != "6");
 
         }
 
@@ -74,6 +80,17 @@ namespace UserInterface
                     }
                     break;
                 case "5":
+                    if (paisListado.listaNoVaciaP())
+                    {
+                        menuMostrarBuscado();
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine(" \n \n No hay paises para buscar \n \n ");
+                    }
+                    break;
+                case "6":
                     Console.WriteLine("");
                     break;
             }
@@ -167,6 +184,24 @@ namespace UserInterface
                 Console.WriteLine("\n \n Se ingresaron mal los datos, por favor volver a ingresarlos. \n \n ");
             }
 
+        }
+
+        public void menuMostrarBuscado()
+        {
+            try
+            {
+                Console.WriteLine("Ingresar Codigo de area de pais a buscar");
+                int idBuscar = int.Parse(Console.ReadLine());
+
+                if (idBuscar != 0)
+                {
+                    Console.WriteLine($"El Pais buscado es: {paisListado.buscarPais(idBuscar)}");
+                }
+            }
+            catch
+            {
+                Console.WriteLine("\n \n Numero de Codigo de Area no identificado. \n \n ");
+            }
         }
 
     }

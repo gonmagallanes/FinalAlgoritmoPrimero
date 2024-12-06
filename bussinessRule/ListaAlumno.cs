@@ -7,9 +7,17 @@ namespace bussinessRule
 {
     public class ListaAlumno
     {
-        private List<Alumno> _ListaAlumno = new List<Alumno>();
+        private List<Alumno> _ListaAlumno;
 
         private ListaPaises _ListaPaises;
+
+        public ListaAlumno(ListaPaises listaPaises)
+        {
+
+            this._ListaAlumno = new List<Alumno>();
+            this._ListaPaises = listaPaises;
+
+        }
 
         public bool alumnoExistente(int dni)
         {
@@ -132,27 +140,27 @@ namespace bussinessRule
                 texto += "Alumno: " + alumno.Nombre + "\n";
                 texto += "Nota: " + alumno.Nota + "\n";
                 texto += "DNI: " + alumno.DNI + "\n";
-                texto += nacionalidaAlumno(alumno.codigoDeArea);
+                texto += "Codigo de Area: " + alumno.codigoDeArea + "\n";
+                texto += "Pais de Nacimiento: " + nacionalidaAlumno(alumno.codigoDeArea);
             }
             return texto;
         }
 
         public string nacionalidaAlumno(int id)
         {
+
             Alumno alumno;
-            Paises pais = _ListaPaises.buscarPaises(id);
+            string paisBuscado = _ListaPaises.pasarCodigoAPaises(id);
 
-            if (pais != null)
-            {
-                return $"Pais de Nacimiento: {pais.nombrePais}";
-            }
-            else
-            {
 
-                return "chupala";
-            }
+
+            return paisBuscado;
 
         }
+
+
+
+
 
         public bool listaNoVaciaA()
         {

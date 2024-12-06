@@ -9,3 +9,4 @@ C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\obj
 C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\obj\Debug\net8.0\refint\bussinessRule.dll
 C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\obj\Debug\net8.0\bussinessRule.pdb
 C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\obj\Debug\net8.0\ref\bussinessRule.dll
+C:\Users\Gonzalo\Desktop\TECAS\Algoritmo\FinalAlgoritmoAñoUno\bussinessRule\obj\Debug\net8.0\bussinessRule.sourcelink.json
