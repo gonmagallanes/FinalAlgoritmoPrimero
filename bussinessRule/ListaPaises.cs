@@ -9,6 +9,8 @@ namespace bussinessRule
     {
         private List<Paises> _ListaPaises = new List<Paises>();
 
+
+
         public bool paisExistente(int id)
         {
 
@@ -130,21 +132,9 @@ namespace bussinessRule
 
         }
 
-        // public string buscarPaises(int codigoArea)
-        // {
-        //     foreach (Paises pais in _ListaPaises)
-        //     {
-        //         if (pais.codigoDeArea == codigoArea)
-        //         {
-        //             return $"{pais.nombrePais}";
-        //         }
-        //     }
-        //     return "";
-        // }
-
         public bool listaNoVaciaP()
         {
-            if (_ListaPaises.Count >= 0)
+            if (_ListaPaises.Count >= 1)
             {
                 return true;
             }
