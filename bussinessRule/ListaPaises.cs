@@ -11,26 +11,47 @@ namespace bussinessRule
 
 
 
-        public bool paisExistente(int id)
+        public bool paisExistenteId(int id)
         {
-
             foreach (Paises pais in _ListaPaises)
             {
-
                 if (pais.codigoDeArea == id)
                 {
                     return true;
                 }
-
             }
-
             return false;
+        }
+        public bool paisExistenteCapital(string Capital)
+        {
+            foreach (Paises pais in _ListaPaises)
+            {
 
+                if (pais.nombreCapital == Capital)
+                {
+
+                    return true;
+                }
+            }
+            return false;
+        }
+        public bool paisExistenteName(string Name)
+        {
+            foreach (Paises pais in _ListaPaises)
+            {
+
+                if (pais.nombrePais == Name)
+                {
+
+                    return true;
+                }
+            }
+            return false;
         }
 
         public bool agregarPais(Paises paises)
         {
-            if (paisExistente(paises.codigoDeArea))
+            if (paisExistenteId(paises.codigoDeArea) && paisExistenteCapital(paises.nombreCapital) && paisExistenteName(paises.nombrePais))
             {
                 return false;
             }

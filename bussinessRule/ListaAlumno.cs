@@ -142,8 +142,7 @@ namespace bussinessRule
                 texto += "Alumno: " + alumno.Nombre + "\n";
                 texto += "Nota: " + alumno.Nota + "\n";
                 texto += "DNI: " + alumno.DNI + "\n";
-                texto += "Codigo de Area: " + alumno.codigoDeArea + "\n";
-                texto += "Pais de Nacimiento: " + nacionalidaAlumno(alumno.codigoDeArea);
+                texto += "Pais de Nacimiento: " + nacionalidaAlumno(alumno.codigoDeArea) + "\n";
             }
             return texto;
         }
