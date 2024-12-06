@@ -42,7 +42,6 @@ namespace bussinessRule
 
                 if (pais.nombrePais == Name)
                 {
-
                     return true;
                 }
             }
@@ -51,7 +50,7 @@ namespace bussinessRule
 
         public bool agregarPais(Paises paises)
         {
-            if (paisExistenteId(paises.codigoDeArea) && paisExistenteCapital(paises.nombreCapital) && paisExistenteName(paises.nombrePais))
+            if (paisExistenteId(paises.codigoDeArea) == true || paisExistenteCapital(paises.nombreCapital) == true || paisExistenteName(paises.nombrePais) == true)
             {
                 return false;
             }
