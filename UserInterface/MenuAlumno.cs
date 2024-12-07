@@ -22,7 +22,7 @@ namespace UserInterface
             do
             {
 
-                Console.WriteLine("~~~ Menu Principal ~~~ \n ");
+                Console.WriteLine("\n~~~ Menu Alumnos ~~~ \n ");
                 Console.WriteLine(" 1- Ingresar nuevo alumno");
                 Console.WriteLine(" 2- Dar de baja alumno ");
                 Console.WriteLine(" 3- Modificar datos de un alumno");

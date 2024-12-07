@@ -21,7 +21,7 @@ namespace UserInterface
             string eleccionPais = "";
             do
             {
-                Console.WriteLine("\n~~~ Menu Paises ~~~ \n");
+                Console.WriteLine("\n~~~ Menu Paises ~~~\n");
                 Console.WriteLine("1- Agregar País");
                 Console.WriteLine("2- Eliminar País");
                 Console.WriteLine("3- Modificar País");
