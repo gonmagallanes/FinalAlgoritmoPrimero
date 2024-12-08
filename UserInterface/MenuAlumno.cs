@@ -116,13 +116,13 @@ namespace UserInterface
             try
             {
                 Console.WriteLine("Nombre del alumno: ");
-                string nombreAlumno = Console.ReadLine();
+                string nombreAlumno = Console.ReadLine().Trim();
                 Console.WriteLine("Nota del alumno: ");
-                double notaAlumno = double.Parse(Console.ReadLine());
+                double notaAlumno = double.Parse(Console.ReadLine().Trim());
                 Console.WriteLine("DNI del alumno: ");
-                int dniAlumno = int.Parse(Console.ReadLine());
+                int dniAlumno = int.Parse(Console.ReadLine().Trim());
                 Console.WriteLine("Ingresar Codigo de Area");
-                int idAlumno = int.Parse(Console.ReadLine());
+                int idAlumno = int.Parse(Console.ReadLine().Trim());
 
                 if (nombreAlumno != "" && dniAlumno != null && notaAlumno != null && notaAlumno >= 0 && notaAlumno <= 10 && idAlumno > 0)
                 {
@@ -145,7 +145,7 @@ namespace UserInterface
             try
             {
                 Console.WriteLine("Ingresar DNI del alumno que quiere eliminar: ");
-                int dniEliminado = int.Parse(Console.ReadLine());
+                int dniEliminado = int.Parse(Console.ReadLine().Trim());
 
                 if (dniEliminado != null)
                 {
@@ -171,18 +171,21 @@ namespace UserInterface
 
                 string nombreModificado = "";
                 string notaModificada = "";
+                int codigoModificado;
                 Console.WriteLine("Ingresar el DNI del Alumno que quiera modificar");
-                int DNImodificado = int.Parse(Console.ReadLine());
+                int DNImodificado = int.Parse(Console.ReadLine().Trim());
 
 
                 if (DNImodificado != 0)
                 {
-                    Console.WriteLine("Ingrese el nuevo nombre: ");
-                    nombreModificado = Console.ReadLine();
-                    Console.WriteLine("Ingrese la nueva nota");
-                    notaModificada = Console.ReadLine();
+                    Console.WriteLine("Ingrese el nuevo Nombre: ");
+                    nombreModificado = Console.ReadLine().Trim();
+                    Console.WriteLine("Ingrese la nueva Nota");
+                    notaModificada = Console.ReadLine().Trim();
+                    Console.WriteLine("Ingrese nuevo Codigo de Area");
+                    codigoModificado = int.Parse(Console.ReadLine().Trim());
 
-                    alumnoListado.modificarAlumno(DNImodificado, nombreModificado, notaModificada);
+                    alumnoListado.modificarAlumno(DNImodificado, nombreModificado, notaModificada, codigoModificado);
                 }
 
             }
@@ -198,7 +201,7 @@ namespace UserInterface
             try
             {
                 Console.WriteLine("Ingresar DNI del alumno a buscar");
-                int DNIbuscar = int.Parse(Console.ReadLine());
+                int DNIbuscar = int.Parse(Console.ReadLine().Trim());
 
                 if (DNIbuscar != 0)
                 {

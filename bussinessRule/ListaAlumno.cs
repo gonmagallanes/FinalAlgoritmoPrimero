@@ -67,7 +67,7 @@ namespace bussinessRule
 
         }
 
-        public bool modificarAlumno(int dni, string nombre, string nota)
+        public bool modificarAlumno(int dni, string nombre, string nota, int codigo)
         {
             foreach (Alumno alumno in _ListaAlumno)
             {
@@ -75,6 +75,7 @@ namespace bussinessRule
                 {
                     alumno.Nombre = nombre;
                     alumno.Nota = int.Parse(nota);
+                    alumno.codigoDeArea = codigo;
 
                     return true;
                 }

@@ -30,7 +30,7 @@ namespace UserInterface
                 Console.WriteLine("6- Volver al inicio");
 
 
-                eleccionPais = Console.ReadLine();
+                eleccionPais = Console.ReadLine().Trim();
 
                 switchPaises(eleccionPais);
 
@@ -104,13 +104,13 @@ namespace UserInterface
             try
             {
                 Console.WriteLine("Ingresar País: ");
-                nombrePais = Console.ReadLine();
+                nombrePais = Console.ReadLine().Trim();
 
                 Console.WriteLine("Ingresar Capital del País: ");
-                nombreCapital = Console.ReadLine();
+                nombreCapital = Console.ReadLine().Trim();
 
                 Console.WriteLine("Ingresar codigo de area del Pais");
-                idPais = int.Parse(Console.ReadLine());
+                idPais = int.Parse(Console.ReadLine().Trim());
 
                 if (nombreCapital != "" && nombreCapital != "" && idPais >= 1)
                 {
@@ -132,7 +132,7 @@ namespace UserInterface
             try
             {
                 Console.WriteLine("Ingresar Codigo del pais a eliminar: ");
-                int idPais = int.Parse(Console.ReadLine());
+                int idPais = int.Parse(Console.ReadLine().Trim());
 
                 if (paisListado.eliminarPais(idPais))
                 {
@@ -159,16 +159,16 @@ namespace UserInterface
                 string capitalModificado = "";
 
                 Console.WriteLine("Ingresar Codigo del pais a modificar: ");
-                int idPais = int.Parse(Console.ReadLine());
+                int idPais = int.Parse(Console.ReadLine().Trim());
 
 
                 if (paisListado.eliminarPais(idPais))
                 {
                     Console.WriteLine("Ingresar Pais: ");
-                    paisModificado = Console.ReadLine();
+                    paisModificado = Console.ReadLine().Trim();
 
                     Console.WriteLine("Ingresar su Capital");
-                    capitalModificado = Console.ReadLine();
+                    capitalModificado = Console.ReadLine().Trim();
 
                     paisListado.modificarPais(idPais, paisModificado, capitalModificado);
 
@@ -191,7 +191,7 @@ namespace UserInterface
             try
             {
                 Console.WriteLine("Ingresar Codigo de area de pais a buscar");
-                int idBuscar = int.Parse(Console.ReadLine());
+                int idBuscar = int.Parse(Console.ReadLine().Trim());
 
                 if (idBuscar != 0)
                 {

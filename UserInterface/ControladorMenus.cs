@@ -31,7 +31,7 @@ namespace UserInterface
                 Console.WriteLine("2- Menu Paises");
                 Console.WriteLine("3- Salir");
 
-                eleccion = Console.ReadLine();
+                eleccion = Console.ReadLine().Trim();
 
                 switchMenus(eleccion);
 

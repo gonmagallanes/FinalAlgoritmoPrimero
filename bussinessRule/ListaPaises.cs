@@ -104,7 +104,7 @@ namespace bussinessRule
 
         public string buscarPais(int id)
         {
-            string paisBuscado = "";
+            string paisBuscado = "Desconocido";
 
             foreach (Paises pais in _ListaPaises)
             {

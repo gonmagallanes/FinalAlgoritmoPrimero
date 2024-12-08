@@ -11,8 +11,3 @@ class Program
 
     }
 }
-
-
-// --- Si se borra el pais, que salte desconocido.
-// --- Que no se repita el ID, ni capital, ni nombre.
-// --- ADVERTENCIA DE FALTA DE PAIS HACIA EL ALUMNO.

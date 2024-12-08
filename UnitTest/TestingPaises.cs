@@ -43,6 +43,6 @@ public class TestingPaises
 
         string paisEliminado = listaPaises.buscarPais(54);
 
-        Assert.AreEqual(paisEliminado, "Argentina");
+        Assert.AreEqual(paisEliminado, $"~~~~~\n Nombre: Argentina\n Capital: Buenos Aires\n Codigo de Area: 54\n~~~~~");
     }
 }
